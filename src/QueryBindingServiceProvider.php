@@ -40,9 +40,19 @@ class QueryBindingServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
+        $this->resetStaticState();
         $this->registerRouteMacros();
         $this->registerMiddleware();
         $this->publishConfig();
+    }
+
+    /**
+     * Reset static state to support fresh application instances.
+     */
+    protected function resetStaticState(): void
+    {
+        static::$boundParameters = [];
+        $this->app->make(QueryBindingRegistry::class)->clear();
     }
 
     /**
