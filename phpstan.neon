@@ -1,0 +1,14 @@
+includes:
+    - vendor/larastan/larastan/extension.neon
+
+parameters:
+    paths:
+        - src
+
+    level: 9
+
+    ignoreErrors:
+        - '#Call to an undefined method Illuminate\\Routing\\Route::bindQuery\(\)#'
+        - '#Call to an undefined method Illuminate\\Routing\\Route::bind(With|WithCount|Select|WithTrashed|OnlyTrashed|Scoped|Where|WithoutGlobalScope|WithoutGlobalScopes)\(\)#'
+
+    reportUnmatchedIgnoredErrors: false
