@@ -323,7 +323,7 @@ Contributions are welcome! Please see [CONTRIBUTING](CONTRIBUTING.md) for detail
 
 ## Security
 
-If you discover a security vulnerability, please email security@pxl.no.
+If you discover a security vulnerability, please [contact us](https://pxl.no/en/contact)
 
 ## Credits
 
